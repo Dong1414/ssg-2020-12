@@ -305,21 +305,42 @@ border-top:1px solid black;
 
 /*디테일 시작 */
 
-.article-list > .detail-title{
+.detail-list > * > div {
+  display:flex;
+}
+.detail-list > header > div > div {
+position:relative;
+}
+
+.detail-list > header > div > div::after {
+content:"";
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+right:0;
+width:1px;
+height:10px;
+background-color:black;
+}
+
+
+.detail-list > .detail-title{
   margin-bottom:50px;
+   border-bottom:1px solid black;
+   text-align: center;
 }
 
-.article-list > .detail-title {
-  border-bottom:1px solid black;
-}
 
-.article-list > .detail-main {
+.detail-list > .detail-main {
+	
   margin-left: 30px;
   border-top:1px solid black;
   border-bottom:1px solid black;
   width:1100px;
 }
-.article-list > .detail-main >.main-body{
+.detail-list > .detail-main >.main-body{
+	
+	display:block;
   font-size:2rem;
   margin-top:15px;
   margin-bottom:15px;

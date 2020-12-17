@@ -80,39 +80,59 @@
 		<main class="flex-grow-1">
 			<section class="title-bar con-min-width">
 				<h1 class="con">
-					<i class="fab fa-free-code-camp"></i> <span>FREE LIST</span>
+					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
 				</h1>
 			</section>
 			
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
 
-    <section class="section-1 con-min-width">
-      <div class="con">
-        <div class="article-list">
-          <header>
-            <div class ="flex flex-jc-c">            
-              <div class="article-list__cell-id">번호</div>
-              <div class="article-list__cell-reg-date">날짜</div>
-              <div class="article-list__cell-writer">작성자</div>
-              <div class="article-list__cell-title">제목</div>
-            </div>
-          </header>
-           <main class=list-main>           
-            <div><div class="article-list__cell-id">9</div><div class="article-list__cell-reg-date">2020-12-17 11:57:30</div><div class="article-list__cell-writer">테스터1</div><div class="article-list__cell-title"><a href="free-article-detail-9.html" class="hover-underline">제목_0.6840361996405164</a></div></div><div><div class="article-list__cell-id">8</div><div class="article-list__cell-reg-date">2020-12-17 11:57:30</div><div class="article-list__cell-writer">테스터1</div><div class="article-list__cell-title"><a href="free-article-detail-8.html" class="hover-underline">제목_0.9453305899587745</a></div></div><div><div class="article-list__cell-id">6</div><div class="article-list__cell-reg-date">2020-12-17 11:57:30</div><div class="article-list__cell-writer">테스터2</div><div class="article-list__cell-title"><a href="free-article-detail-6.html" class="hover-underline">제목_0.16613409311150582</a></div></div><div><div class="article-list__cell-id">4</div><div class="article-list__cell-reg-date">2020-12-17 11:57:29</div><div class="article-list__cell-writer">테스터2</div><div class="article-list__cell-title"><a href="free-article-detail-4.html" class="hover-underline">제목_0.558093930183066</a></div></div><div><div class="article-list__cell-id">1</div><div class="article-list__cell-reg-date">2020-12-17 11:57:22</div><div class="article-list__cell-writer">테스터1</div><div class="article-list__cell-title"><a href="free-article-detail-1.html" class="hover-underline">제목_0.719607596955828</a></div></div>                           
-                   
-           </main>
-        </div>
-        
-        <div class="article-page-menu">
-          <ul class="flex flex-jc-r">
-           <li><a href="article-list-free-1.html" class="flex flex-ai-c ">1</a></li><li><a href="article-list-free-2.html" class="flex flex-ai-c ">2</a></li><li><a href="article-list-free-3.html" class="flex flex-ai-c ">3</a></li><li><a href="article-list-free-4.html" class="flex flex-ai-c article-page-menu__link--selected">4</a></li>
-          </ul>
-        </div>
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+
+
+
+<section class="section-1 con-min-width">
+    <div class="con">
+      <div class="detail-list">
+        <header class="detail-title">
+          <div class ="flex flex-jc-c">
+            <div class="article-list__cell-id">2</div><div class="article-list__cell-title">[Java} 변수 선언</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-reg-date">2020-12-17 19:11:44</div>
+          </div>
+        </header>
+        <main class="detail-main main-font">
+          <div class = "main-body ">       
+            # 자바기본문법
+```java
+int a = 10;
+int b = 20;
+int c = a + b;
+double d = 10.0;
+String e = "homar";
+char d = 'a';
+```
+          </div>          
+        </main>
+        <div class="article-detail__menu flex">       
+            <a href="#" class="hover-underline">&lt; 다음글 </a><a href="article-list-free-1.html" class="hover-underline">목록</a><a href="#" class="hover-underline"> 이전글 &gt;</a> 
+          </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
-  
-  
 <footer class="bottom-bar con-min-width">
 	<div class="con flex flex-ai-c">
 		<a href="#" class="logo logo--mini flex flex-ai-c">
