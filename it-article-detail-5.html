@@ -110,21 +110,38 @@
       <div class="detail-list">
         <header class="detail-title">
           <div class ="flex flex-jc-c">
-            <div class="article-list__cell-id">1</div><div class="article-list__cell-title">공지사항</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-reg-date">2020-12-18 09:02:49</div>
+            <div class="article-list__cell-id">5</div><div class="article-list__cell-title">[Java] 진수 변환</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-reg-date">2020-12-18 11:10:40</div>
           </div>
         </header>
         <main class="detail-main main-font">
           <div class = "main-body ">       
-            # 공지사항
-안녕하세요.
-이 사이트는 저의 글 연재 공간입니다.
+            # 2진수, 8진수, 16진수,10진수 변환
+```java
+import java.util.Scanner;
 
----
+public class Main {
 
-# 이 사이트의 특징
-- A
-- B
-- C
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		
+		String n2 = Integer.toBinaryString(num); // 2진수
+		String n8 = Integer.toOctalString(num); // 8진수
+		String n16 = Integer.toHexString(num); // 16진수
+		
+		
+		System.out.println("2진수: " + n2);
+		System.out.println("8진수: " + n8);
+		System.out.println("16진수: " + n16);
+		
+        
+        String num8 = scan.nextLine(); // 8진수 입력받기
+     	int n10 = Integer.parseInt(num, 8);   //8진수 10진수로 변환, 입력에 따라 2,8,16
+        System.out.println(n10);
+	}
+}}
+```
           </div>          
         </main>
         
@@ -143,7 +160,7 @@
        </div>	
         
         <div class="article-detail__menu flex">       
-            <a href="#" class="hover-underline">&lt; 다음글 </a><a href="article-list-notice-1.html" class="hover-underline">목록</a><a href="#" class="hover-underline"> 이전글 &gt;</a> 
+            <a href="it-article-detail-5.html" class="hover-underline">&lt; 다음글 </a><a href="article-list-it-1.html" class="hover-underline">목록</a><a href="it-article-detail-3.html" class="hover-underline"> 이전글 &gt;</a>
           </div>
       </div>
     </div>
