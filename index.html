@@ -3,6 +3,7 @@
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CL0C344EBM"></script>
+<script data-ad-client="ca-pub-7446024244522996" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -24,96 +25,128 @@
 		<!-- 로고바 시작 -->
 		<header class="logo-bar con-min-width">
 			<div class="con height-100p flex flex-jc-c">
-				<a href="#" class="logo flex flex-ai-c">
-					<i class="fab fa-jenkins"></i>
+				<a href="index.html" class="logo flex flex-ai-c">         
 					<span>
-						Develo<span>p</span>ers
+						Dong<span>Log</span>
 					</span>
 				</a>
+         <div class="flex-grow-1"></div>
+    <nav class="menu-box-1">
+      <ul class="flex height-100p">
+        <li><a class="height-100p flex flex-ai-c" href="https://github.com/Dong1414/" target="_blank">GITHUB</a></li>
+        <li><a class="height-100p flex flex-ai-c" href="https://dlaehdrktm.tistory.com/" target="_blank">TSTORY</a></li>
+        <li><a class="height-100p flex flex-ai-c" href=href="#">STATUS</a></li>        
+      </ul>
+    </nav>
 			</div>
 		</header>
 		<!-- 로고바 끝 -->
 
 		<!-- 메뉴바 시작 -->
-		<header class="menu-bar con-min-width">
-			<div class="con height-100p">
+			<header class="menu-bar">
+			<div class="height-100p">
 				<nav class="menu-bar__menu-1">
-					<ul class="flex">
-						<li>
-							<a href="./" class="block">
-								<i class="fas fa-home"></i>
-								<span>HOME</span>
-							</a>
-						</li>
-						<li>
-							<a class="block">
-								<i class="fas fa-list"></i>
-								<span>ARTICLES</span>
-							</a>
-							<ul>
-								<li><a href="article-list-it-1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>IT LIST</span></a></li><li><a href="article-list-notice-1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="block">
-								<i class="fas fa-link"></i>
-								<span>LINK</span>
-							</a>
-							<ul>
-								<li>
-									<a href="https://jhs512.github.io/blog/" target="_blank"
-										class="block">
-										<i class="fab fa-blogger-b"></i>
-										<span>BLOG</span>
-									</a>
-								</li>
-								<li>
-									<a href="https://github.com/" target="_blank" class="block">
-										<i class="fab fa-github"></i>
-										<span>GITHUB</span>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="stat.html" class="block">
-								<i class="fas fa-chart-pie"></i>
-								<span>STATISTICS</span>
-							</a>
-						</li>
+				<ul>					
+						<li><a href="article-list-it-1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>IT LIST</span></a></li><li><a href="article-list-notice-1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
+					
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<!-- 메뉴바 끝 -->
 		
-		<main class="flex-grow-1">
+		<main class="flex-grow-1 back-image">
 			<section class="title-bar con-min-width">
-				<h1 class="con">
-					<i class="fas fa-home"></i> <span>HOME</span>
+				<h1 class="con color-w">
+					<i class="fas fa-home"></i> <span>최신글</span>
 				</h1>
 			</section>
 			
-<section class="section-1 con-min-width">
-	<div class="con">Lorem ipsum dolor sit amet consectetur
-		adipisicing elit. Ipsam, esse ullam nulla id unde ex dicta sequi,
-		repellat temporibus quis amet ipsa provident magni veniam explicabo,
-		repudiandae fuga in. In.</div>
-</section>
-</main>
+ <section class="section-1 con-min-width">
+      <div class="con">
+       <div class="list_content">
+<a href="" class="link_post">
+<strong class="tit_post">[Java] 공백 제거</strong>
+<p class="txt_post"># .trim() 공백제거 ( Scanner 메서드)
+```java
+Scanner scan = new Scanner(System.in);
+
+String title = scan.nextLine().trim();
+
+```</p>
+</a>
+<div class="detail_into">
+2 , 2020-12-18 11:13:05</div></div><div class="list_content">
+<a href="" class="link_post">
+<strong class="tit_post">[Java] 진수 변환</strong>
+<p class="txt_post"># 2진수, 8진수, 16진수,10진수 변환
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		
+		String n2 = Integer.toBinaryString(num); // 2진수
+		String n8 = Integer.toOctalString(num); // 8진수
+		String n16 = Integer.toHexString(num); // 16진수
+		
+		
+		System.out.println("2진수: " + n2);
+		System.out.println("8진수: " + n8);
+		System.out.println("16진수: " + n16);
+		
+        
+        String num8 = scan.nextLine(); // 8진수 입력받기
+     	int n10 = Integer.parseInt(num, 8);   //8진수 10진수로 변환, 입력에 따라 2,8,16
+        System.out.println(n10);
+	}
+}}
+```</p>
+</a>
+<div class="detail_into">
+2 , 2020-12-18 11:10:40</div></div><div class="list_content">
+<a href="" class="link_post">
+<strong class="tit_post">[Java] 두 숫자 사이의 합 구하기</strong>
+<p class="txt_post"># 정수 a, b 가 주어질 경우 두 숫자 사이의 합 구하기
+```java
+Math.min(a,b) //최소값
+Math.max(a,b) //최대값
+//등차수열
+private long sumAtob(long a((최대), long b(최소)){ return (b -1 a+ 1) * ( a + b ) / 2; } // 
+}
+```</p>
+</a>
+<div class="detail_into">
+2 , 2020-12-18 11:07:44</div></div><div class="list_content">
+<a href="" class="link_post">
+<strong class="tit_post">[Java] 조건문</strong>
+<p class="txt_post"># 조건문 ( if )
+```java
+int a = 10;
+
+if(a == 10){ //a가 10이면 출력
+    System.out.println(a); 
+}
+```</p>
+</a>
+<div class="detail_into">
+2 , 2020-12-18 09:02:49</div></div>
+      </div>
+    </section>
+  </main>
+
 <footer class="bottom-bar con-min-width">
 	<div class="con flex flex-ai-c">
-		<a href="#" class="logo logo--mini flex flex-ai-c">
-			<i class="fab fa-jenkins"></i>
-			<span>
-				Develo<span>p</span>ers
-			</span>
+		<a href="index.html" class="logo logo--mini flex flex-ai-c">			
+			<span>Dong<span>Log</span>
+					</span>
 		</a>
 
-		<div class="bottom-bar__site-info">Lorem ipsum dolor sit amet
-			consectetur adipisicing elit. Dolorum eos ipsum necessitatibus
-			doloremque quos voluptate debitis earum aut a consequuntur explicabo
-			deleniti qui eius facere, harum error eveniet vel laudantium.</div>
+		<div class="bottom-bar__site-info"> 개발 연습장</div>
 	</div>
 </footer>
 </div>
