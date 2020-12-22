@@ -65,7 +65,7 @@
 		<main class="flex-grow-1">
 			<section class="title-bar con-min-width">
 				<h1 class="con">
-					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
+					<i class="fas fa-clipboard-list"></i> <span>STATISTICS</span>
 				</h1>
 			</section>
 			
@@ -91,60 +91,26 @@
 
 <section class="section-1 con-min-width">
     <div class="con">
-      <div class="detail-list">
+      <div class="stat-list">
         <header class="detail-title">
           <div class ="flex flex-jc-c">
-            <div class="article-list__cell-id">5</div><div class="article-list__cell-title">[Java] 진수 변환</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-reg-date">2020-12-18 11:10:40</div>
+            <div>STATUS</div>
           </div>
         </header>
         <main class="detail-main main-font">
           <div class = "main-body ">       
-            # 2진수, 8진수, 16진수,10진수 변환
-```java
-import java.util.Scanner;
-
-public class Main {
-
-	public static void main(String[] args) {
-		
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
-		
-		String n2 = Integer.toBinaryString(num); // 2진수
-		String n8 = Integer.toOctalString(num); // 8진수
-		String n16 = Integer.toHexString(num); // 16진수
-		
-		
-		System.out.println("2진수: " + n2);
-		System.out.println("8진수: " + n8);
-		System.out.println("16진수: " + n16);
-		
-        
-        String num8 = scan.nextLine(); // 8진수 입력받기
-     	int n10 = Integer.parseInt(num, 8);   //8진수 10진수로 변환, 입력에 따라 2,8,16
-        System.out.println(n10);
-	}
-}}
-```
+            <meta charset="UTF-8"><div>회원 수 : 2</div><div>전체 게시물 수 : 6</div><div>공지사항 게시판 게시물 수 : 1</div><div>IT 게시판 게시물 수 : 5</div><div>전체 게시물 조회 수 : 12</div><div>공지사항 게시판 조회 수 : 3</div><div>IT 게시판 조회 수 : 9</div>
           </div>          
         </main>
         
        <div class="article-detail__reply-box">
        <div id="disqus_thread"></div>
-<script>
 
-   (function() { // DON'T EDIT BELOW THIS LINE
-   var d = document, s = d.createElement('script');
-   s.src = 'https://homar-ssg.disqus.com/embed.js';
-   s.setAttribute('data-timestamp', +new Date());
-   (d.head || d.body).appendChild(s);
-   })();
-</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
        </div>	
         
         <div class="article-detail__menu flex">       
-            <a href="it-article-detail-5.html" class="hover-underline">&lt; 다음글 </a><a href="article-list-it-1.html" class="hover-underline">목록</a><a href="it-article-detail-3.html" class="hover-underline"> 이전글 &gt;</a>
+            
           </div>
       </div>
     </div>
