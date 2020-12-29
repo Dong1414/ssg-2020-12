@@ -23,7 +23,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.homar.co.kr" />
-<meta name="subject" content="[Java] 진수 변환😀"/>
+<meta name="subject" content="[Java]BufferedReader, BufferedWriter 빠른 입출력 클래스"/>
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
@@ -31,100 +31,94 @@
 <meta name="lastmod" content="2020-12-29T09:39:30" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="[Java] 진수 변환😀" />
+<meta name="twitter:title" content="[Java]BufferedReader, BufferedWriter 빠른 입출력 클래스" />
 <meta name="twitter:site" content="@DongLog" />
 <meta name="twitter:creator" content="@DongLog" />
 <meta name="twitter:image" content="/img/logo/logo_opengraph.png">
-<meta name="twitter:description" content=" 2진수 8진수 16진수10진수 변환 
-java
-import javautilScanner
+<meta name="twitter:description" content=" 입력 BufferedReader 
+java 
+BufferedReader br  new BufferedReadernew InputStreamReaderSystemin        
+int n  IntegerparseIntbrreadLine
 
-public class Main 
+String s  brreadLine
+String b  ssplit 
+IntegervalueOfb0  String으로 받아서 나눠서 바꿔서 출력
 
-	public static void mainString args 
-		
-		Scanner scan  new ScannerSystemin
-		int num  scannextInt
-		
-		String n2  IntegertoBinaryStringnum  2진수
-		String n8  IntegertoOctalStringnum  8진수
-		String n16  IntegertoHexStringnum  16진수
-		
-		
-		Systemoutprintln2진수   n2
-		Systemoutprintln8진수   n8
-		Systemoutprintln16진수   n16
-		
-        
-        String num8  scannextLine  8진수 입력받기
-     	int n10  IntegerparseIntnum 8   8진수 10진수로 변환 입력에 따라 2816
-        Systemoutprintlnn10
-	
 
-" />
+무조건 String형으로 들어오기 때문에 형변환 해줘야함
+
+ 코드업 풀 때 바로 형변환 안됐다 String으로 받아서 변환했음
+
+
+ 출력 BufferedWriter 
+java 
+BufferedWriter bw  new BufferedWriternew OutputStreamWriterSystemout 
+bwwriteexamn
+	bwflush 꼭 입력해야하는듯
+
+
+명령어만 좀 다르고 사용 방식은 비슷함
+
+Systemoutprintln보다 더 빠르다" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="DongLog" />
 <meta itemprop="name" content="DongLog" />
-<meta itemprop="description" content=" 2진수 8진수 16진수10진수 변환 
-java
-import javautilScanner
+<meta itemprop="description" content=" 입력 BufferedReader 
+java 
+BufferedReader br  new BufferedReadernew InputStreamReaderSystemin        
+int n  IntegerparseIntbrreadLine
 
-public class Main 
+String s  brreadLine
+String b  ssplit 
+IntegervalueOfb0  String으로 받아서 나눠서 바꿔서 출력
 
-	public static void mainString args 
-		
-		Scanner scan  new ScannerSystemin
-		int num  scannextInt
-		
-		String n2  IntegertoBinaryStringnum  2진수
-		String n8  IntegertoOctalStringnum  8진수
-		String n16  IntegertoHexStringnum  16진수
-		
-		
-		Systemoutprintln2진수   n2
-		Systemoutprintln8진수   n8
-		Systemoutprintln16진수   n16
-		
-        
-        String num8  scannextLine  8진수 입력받기
-     	int n10  IntegerparseIntnum 8   8진수 10진수로 변환 입력에 따라 2816
-        Systemoutprintlnn10
-	
 
-" />
+무조건 String형으로 들어오기 때문에 형변환 해줘야함
+
+ 코드업 풀 때 바로 형변환 안됐다 String으로 받아서 변환했음
+
+
+ 출력 BufferedWriter 
+java 
+BufferedWriter bw  new BufferedWriternew OutputStreamWriterSystemout 
+bwwriteexamn
+	bwflush 꼭 입력해야하는듯
+
+
+명령어만 좀 다르고 사용 방식은 비슷함
+
+Systemoutprintln보다 더 빠르다" />
 <meta itemprop="image" content="https://i.esdrop.com/d/TpK9N9qGZZ.png" >
 
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="DongLog" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="[Java] 진수 변환😀" />
-<meta property="og:description" content=" 2진수 8진수 16진수10진수 변환 
-java
-import javautilScanner
+<meta property="og:title" content="[Java]BufferedReader, BufferedWriter 빠른 입출력 클래스" />
+<meta property="og:description" content=" 입력 BufferedReader 
+java 
+BufferedReader br  new BufferedReadernew InputStreamReaderSystemin        
+int n  IntegerparseIntbrreadLine
 
-public class Main 
+String s  brreadLine
+String b  ssplit 
+IntegervalueOfb0  String으로 받아서 나눠서 바꿔서 출력
 
-	public static void mainString args 
-		
-		Scanner scan  new ScannerSystemin
-		int num  scannextInt
-		
-		String n2  IntegertoBinaryStringnum  2진수
-		String n8  IntegertoOctalStringnum  8진수
-		String n16  IntegertoHexStringnum  16진수
-		
-		
-		Systemoutprintln2진수   n2
-		Systemoutprintln8진수   n8
-		Systemoutprintln16진수   n16
-		
-        
-        String num8  scannextLine  8진수 입력받기
-     	int n10  IntegerparseIntnum 8   8진수 10진수로 변환 입력에 따라 2816
-        Systemoutprintlnn10
-	
 
-" />
+무조건 String형으로 들어오기 때문에 형변환 해줘야함
+
+ 코드업 풀 때 바로 형변환 안됐다 String으로 받아서 변환했음
+
+
+ 출력 BufferedWriter 
+java 
+BufferedWriter bw  new BufferedWriternew OutputStreamWriterSystemout 
+bwwriteexamn
+	bwflush 꼭 입력해야하는듯
+
+
+명령어만 좀 다르고 사용 방식은 비슷함
+
+Systemoutprintln보다 더 빠르다" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="https://i.esdrop.com/d/TpK9N9qGZZ.png" >
 <meta property="og:image:alt" content="blog.homar.co.kr" />
@@ -139,7 +133,7 @@ public class Main
 
 
 
-<title>[Java] 진수 변환😀 | DongLog | ARTICLE_DETAIL</title>
+<title>[Java]BufferedReader, BufferedWriter 빠른 입출력 클래스 | DongLog | ARTICLE_DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -216,44 +210,42 @@ public class Main
 	<div class="con">
 		<div class="detail-list">
 			<header class="detail-title">
-				<div class="flex flex-jc-c"><div class="article-list__cell-id">5</div><div class="article-list__cell-title">[Java] 진수 변환😀</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-reg-date">2020-12-18 11:10:40</div></div>
+				<div class="flex flex-jc-c"><div class="article-list__cell-id">9</div><div class="article-list__cell-title">[Java]BufferedReader, BufferedWriter 빠른 입출력 클래스</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-reg-date">2020-12-29 09:36:57</div></div>
 			</header>
 			<main class="detail-main main-font">
-				<div class="main-body "># 2진수, 8진수, 16진수,10진수 변환 😀
-```java
-import java.util.Scanner;
+				<div class="main-body "># .입력 BufferedReader 😀
+```java 
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));        
+int n = Integer.parseInt(br.readLine());
 
-public class Main {
+String s = br.readLine();
+String[] b = s.split(" ");
+Integer.valueOf(b[0]);  //String으로 받아서 나눠서 바꿔서 출력
 
-	public static void main(String[] args) {
-		
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
-		
-		String n2 = Integer.toBinaryString(num); // 2진수
-		String n8 = Integer.toOctalString(num); // 8진수
-		String n16 = Integer.toHexString(num); // 16진수
-		
-		
-		System.out.println("2진수: " + n2);
-		System.out.println("8진수: " + n8);
-		System.out.println("16진수: " + n16);
-		
-        
-        String num8 = scan.nextLine(); // 8진수 입력받기
-     	int n10 = Integer.parseInt(num, 8);   //8진수 10진수로 변환, 입력에 따라 2,8,16
-        System.out.println(n10);
-	}
-}}
-```</div>
+```
+무조건 String형으로 들어오기 때문에 형변환 해줘야함
+
+// 코드업 풀 때 바로 형변환 안됐다 String으로 받아서 변환했음.
+
+
+# .출력 BufferedWriter 😀
+```java 
+BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); 
+bw.write("exam\n");
+	bw.flush(); 꼭 입력해야하는듯?
+
+```
+명령어만 좀 다르고 사용 방식은 비슷함.
+
+System.out.println()보다 더 빠르다.</div>
 			</main>
 
 			<div class="article-detail__reply-box">
 				<div id="disqus_thread"></div>
 				<script>
 					var disqus_config = function() {
-						this.page.url = 'https://blog.homar.co.kr/article_detail_5.html';
-						this.page.identifier = 'article_detail_5.html';
+						this.page.url = 'https://blog.homar.co.kr/article_detail_9.html';
+						this.page.identifier = 'article_detail_9.html';
 					};
 					(function() { // DON'T EDIT BELOW THIS LINE
 						var d = document, s = d.createElement('script');
@@ -269,7 +261,7 @@ public class Main {
 				</noscript>
 			</div>
 
-			<div class="article-detail__menu flex"><a href="it-article-detail-6.html" class="hover-underline">&lt; 다음글 </a><a href="article-list-it-1.html" class="hover-underline">목록</a><a href="it-article-detail-4.html" class="hover-underline"> 이전글 &gt;</a></div>
+			<div class="article-detail__menu flex"><a href="#" class="hover-underline">&lt; 다음글 </a><a href="article-list-it-1.html" class="hover-underline">목록</a><a href="it-article-detail-8.html" class="hover-underline"> 이전글 &gt;</a> </div>
 		</div>
 	</div>
 </section>

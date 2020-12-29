@@ -27,8 +27,8 @@
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
-<meta name="pubdate" content="2020-12-27T20:41:23" />
-<meta name="lastmod" content="2020-12-27T20:41:23" />
+<meta name="pubdate" content="2020-12-29T09:39:30" />
+<meta name="lastmod" content="2020-12-29T09:39:30" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="개발자의 기술/일상 블로그" />
@@ -52,8 +52,8 @@
 <meta property="og:image:alt" content="blog.homar.co.kr" />
 
 
-<meta property="og:updated_time" content="2020-12-27T20:41:23"/>
-<meta property="og:pubdate" content="2020-12-27T20:41:23" />
+<meta property="og:updated_time" content="2020-12-29T09:39:30"/>
+<meta property="og:pubdate" content="2020-12-29T09:39:30" />
 <meta property="og:url" content="https://blog.homar.co.kr" />
 
 
@@ -96,7 +96,7 @@
 			<div class="height-100p">
 				<nav class="menu-bar__menu-1">
 				<ul>					
-						<li><a href="article-list-it-1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>IT LIST</span></a></li><li><a href="article-list-notice-1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
+						<li><a href="article-list-free-1.html" class="block"><i class="fab fa-freebsd"></i> <span>FREE</span></a></li><li><a href="article-list-it-1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>IT LIST</span></a></li><li><a href="article-list-notice-1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
 					
 					</ul>
 				</nav>
@@ -114,11 +114,92 @@
  <section class="section-1 con-min-width ">
       <div class="con">
        <div class="list_content">
+<a href="it-article-detail-9.html" class="link_post">
+<nav>
+<strong class="tit_post">[Java]BufferedReader, BufferedWriter 빠른 입출력 클래스</strong>
+<p class="txt_post"># .입력 BufferedReader 😀
+```java 
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));        
+int n = Integer.parseInt(br.readLine());
+
+String s = br.readLine();
+String[] b = s.split(" ");
+Integer.valueOf(b[0]);  //String으로 받아서 나눠서 바꿔서 출력
+
+```
+무조건 String형으로 들어오기 때문에 형변환 해줘야함
+
+// 코드업 풀 때 바로 형변환 안됐다 String으로 받아서 변환했음.
+
+
+# .출력 BufferedWriter 😀
+```java 
+BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); 
+bw.write("exam\n");
+	bw.flush(); 꼭 입력해야하는듯?
+
+```
+명령어만 좀 다르고 사용 방식은 비슷함.
+
+System.out.println()보다 더 빠르다.</p>
+</nav>
+</a>
+<div class="detail_into">
+IT LIST , 2020-12-29 09:36:57</div></div><div class="list_content">
+<a href="it-article-detail-8.html" class="link_post">
+<nav>
+<strong class="tit_post">[Java] 일, 월 입력받아 요일 구하기</strong>
+<p class="txt_post"># .요일 구하기 😀
+```java 
+class Solution {
+    public String solution(int a, int b) {
+        int [] day = {31,29,31,30,31,30,31,31,30,31,30,31};
+        String [] month = {"THU","FRI", "SAT","SUN", "MON", "TUE", "WED"};
+        
+        int total = 0;
+        
+        for(int i = 0; i < a-1; i++){
+            total += day[i];
+        }
+        
+        total += b;
+        System.out.println(total);
+        int week = total % 7;
+        return month[week];
+    }
+}
+
+```
+2016년 기준이고, 해당 년도의 월마다 일수를 배열에 저장.
+
+ 
+
+요일은 2016.01.01의 요일 금요일에서 하루 뺀 값으로 배열에 저장. ( 나중에 % 7 했을때 1이 나오면 금요일부터 출력 )
+
+ 
+
+요일을 구하는 공식은 
+
+ex) 2016년 5월 24일
+
+   - (1~4월 까지의 일 수 + 현재 달의 일 수) % 7 </p>
+</nav>
+</a>
+<div class="detail_into">
+IT LIST , 2020-12-29 09:34:50</div></div><div class="list_content">
+<a href="free-article-detail-7.html" class="link_post">
+<nav>
+<strong class="tit_post">요즘 날씨 너무 춥다..😭</strong>
+<p class="txt_post">코로나 다 물러가라 제발..😭</p>
+</nav>
+</a>
+<div class="detail_into">
+FREE LIST , 2020-12-29 09:19:19</div></div><div class="list_content">
 <a href="it-article-detail-6.html" class="link_post">
 <nav>
-<strong class="tit_post">[Java] 공백 제거😁</strong>
-<p class="txt_post"># .trim() 공백제거 ( Scanner 메서드)
-```java
+<strong class="tit_post">[Java] 공백 제거😀</strong>
+<p class="txt_post"># .trim() 공백제거 ( Scanner 메서드) 😀
+```java 
 Scanner scan = new Scanner(System.in);
 
 String title = scan.nextLine().trim();
@@ -130,8 +211,8 @@ String title = scan.nextLine().trim();
 IT LIST , 2020-12-18 11:13:05</div></div><div class="list_content">
 <a href="it-article-detail-5.html" class="link_post">
 <nav>
-<strong class="tit_post">[Java] 진수 변환😁</strong>
-<p class="txt_post"># 2진수, 8진수, 16진수,10진수 변환
+<strong class="tit_post">[Java] 진수 변환😀</strong>
+<p class="txt_post"># 2진수, 8진수, 16진수,10진수 변환 😀
 ```java
 import java.util.Scanner;
 
@@ -161,50 +242,7 @@ public class Main {
 </nav>
 </a>
 <div class="detail_into">
-IT LIST , 2020-12-18 11:10:40</div></div><div class="list_content">
-<a href="it-article-detail-4.html" class="link_post">
-<nav>
-<strong class="tit_post">[Java] 두 숫자 사이의 합 구하기😁</strong>
-<p class="txt_post"># 정수 a, b 가 주어질 경우 두 숫자 사이의 합 구하기
-```java
-Math.min(a,b) //최소값
-Math.max(a,b) //최대값
-//등차수열
-private long sumAtob(long a((최대), long b(최소)){ return (b -1 a+ 1) * ( a + b ) / 2; } // 
-}
-```</p>
-</nav>
-</a>
-<div class="detail_into">
-IT LIST , 2020-12-18 11:07:44</div></div><div class="list_content">
-<a href="it-article-detail-3.html" class="link_post">
-<nav>
-<strong class="tit_post">[Java] 조건문😁</strong>
-<p class="txt_post"># 조건문 ( if )
-```java
-int a = 10;
-
-if(a == 10){ //a가 10이면 출력
-    System.out.println(a); 
-}
-```</p>
-</nav>
-</a>
-<div class="detail_into">
-IT LIST , 2020-12-18 09:02:49</div></div><div class="list_content">
-<a href="it-article-detail-2.html" class="link_post">
-<nav>
-<strong class="tit_post">[Java] 기본 문법😁</strong>
-<p class="txt_post"># 자바기본문법
-```java
-int a = 10;
-int b = 20;
-int c = a + b;
-```</p>
-</nav>
-</a>
-<div class="detail_into">
-IT LIST , 2020-12-18 09:02:49</div></div>
+IT LIST , 2020-12-18 11:10:40</div></div>
       </div>
     </section>
   </main>
