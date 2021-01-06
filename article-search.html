@@ -62,7 +62,7 @@
 
 
 
-<title>DongLog | ARTICLE_LIST_IT</title>
+<title>DongLog | ARTICLE_SEARCH</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -113,39 +113,51 @@
 		<main class="flex-grow-1">
 			<section class="title-bar con-min-width">
 				<h1 class="con">
-					<i class="fab fa-free-code-camp"></i> <span>IT LIST</span>
+					<i class="fas fa-search"></i> <span>ARTICLE SEARCH</span>
 				</h1>
 			</section>
 			
+<!-- lodash 불러오기 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
 
-    <section class="section-1 con-min-width">
-      <div class="con">
-        <div class="article-list">
-          <header>
-            <div class ="flex flex-jc-c">            
-              <div class="article-list__cell-id">번호</div>
-              <div class="article-list__cell-reg-date">날짜</div>
-              <div class="article-list__cell-writer">작성자</div>
-              <div class="article-list__cell-title">제목</div>
-            </div>
-          </header>
-           <main class=list-main>           
-            <div><div class="article-list__cell-id">9</div><div class="article-list__cell-reg-date">2020-12-29 09:36:57</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-title"><a href="article-detail-9.html" class="hover-underline">[Java]BufferedReader, BufferedWriter 빠른 입출력 클래스</a></div></div><div><div class="article-list__cell-id">8</div><div class="article-list__cell-reg-date">2020-12-29 09:34:50</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-title"><a href="article-detail-8.html" class="hover-underline">[Java] 일, 월 입력받아 요일 구하기</a></div></div><div><div class="article-list__cell-id">6</div><div class="article-list__cell-reg-date">2020-12-18 11:13:05</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-title"><a href="article-detail-6.html" class="hover-underline">[Java] 공백 제거😀</a></div></div><div><div class="article-list__cell-id">5</div><div class="article-list__cell-reg-date">2020-12-18 11:10:40</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-title"><a href="article-detail-5.html" class="hover-underline">[Java] 진수 변환😀</a></div></div><div><div class="article-list__cell-id">4</div><div class="article-list__cell-reg-date">2020-12-18 11:07:44</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-title"><a href="article-detail-4.html" class="hover-underline">[Java] 두 숫자 사이의 합 구하기😀</a></div></div><div><div class="article-list__cell-id">3</div><div class="article-list__cell-reg-date">2020-12-18 09:02:49</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-title"><a href="article-detail-3.html" class="hover-underline">[Java] 조건문😀</a></div></div><div><div class="article-list__cell-id">2</div><div class="article-list__cell-reg-date">2020-12-18 09:02:49</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-title"><a href="article-detail-2.html" class="hover-underline">[Java] 기본 문법😀</a></div></div>                           
-                   
-           </main>
-        </div>
-        
-        <div class="article-page-menu">
-          <ul class="flex flex-jc-r">
-           <li><a href="article-list-it-1.html" class="flex flex-ai-c article-page-menu__link--selected">1</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
+<!-- vue 불러오기 -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
-  
-  
+<section id = "article-list-wrap" class="section-1 con-min-width">
+	<div class="con">
+		<div class="detail-search">
+			<form class="block">
+				<input @input="searchKeywordInputed" type = "text" placeholder="검색어" :value="searchKeyword">
+				
+			</form>
+		</div>
+		<div class="article-list">
+			<header>
+				<div>
+					<div class="article-list__cell-id">번호</div>
+					<div class="article-list__cell-reg-date">날짜</div>
+					<div class="article-list__cell-writer">작성자</div>
+					<div class="article-list__cell-title">제목</div>
+				</div>
+			</header>
+			<div class="main">
+				<div v-for="article in filtered">
+					<div class="article-list__cell-id">{{article.id}}</div>
+					<div class="article-list__cell-reg-date">{{article.regDate}}</div>
+					<div class="article-list__cell-writer">{{article.writer}}</div>
+					<div class="article-list__cell-title">
+						<a :href="'article-detail-' + article.id + '.html'" target="_blank"
+							class="hover-underline">{{article.title}}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="article_search.js"></script>
+
+</main>
 <footer class="bottom-bar con-min-width">
 	<div class="con flex flex-ai-c">
 		<a href="index.html" class="logo logo--mini flex flex-ai-c">			
