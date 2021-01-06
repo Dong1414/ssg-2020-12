@@ -28,8 +28,8 @@
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
-<meta name="pubdate" content="2021-01-06T18:54:47" />
-<meta name="lastmod" content="2021-01-06T18:54:47" />
+<meta name="pubdate" content="2021-01-06T20:47:30" />
+<meta name="lastmod" content="2021-01-06T20:47:30" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="개발자의 기술/일상 블로그" />
@@ -53,8 +53,8 @@
 <meta property="og:image:alt" content="blog.homar.co.kr" />
 
 
-<meta property="og:updated_time" content="2021-01-06T18:54:47"/>
-<meta property="og:pubdate" content="2021-01-06T18:54:47" />
+<meta property="og:updated_time" content="2021-01-06T20:47:30"/>
+<meta property="og:pubdate" content="2021-01-06T20:47:30" />
 <meta property="og:url" content="https://blog.homar.co.kr" />
 
 
@@ -73,7 +73,7 @@
 <body>
 	<div class="body-content min-height-100vh flex flex-column">
 		<!-- 로고바 시작 -->
-		<header class="logo-bar con-min-width">
+		<header id = "logo-bar" class="logo-bar con-min-width">
 			<div class="con height-100p flex flex-jc-c">
 				<a href="index.html" class="logo flex flex-ai-c">         
 					<span>
@@ -109,6 +109,12 @@
 			</div>
 		</header>
 		<!-- 메뉴바 끝 -->
+		<div class="topkey">
+			<a href="#logo-bar">
+				<i class="fas fa-angle-double-up"></i>
+			</a>	
+		</div>
+		
 		
 		<main class="flex-grow-1 back-image">
 			<section class="title-bar con-min-width">
@@ -120,6 +126,34 @@
  <section class="section-1 con-min-width ">
       <div class="con">
        <div class="list_content">
+<a href="article-detail-10.html" class="link_post">
+<nav>
+<strong class="tit_post">[Java] 소문자, 대문자 변환하기</strong>
+<p class="txt_post"># .소문자, 대문자 변환하기
+```java 
+public class Main {
+
+	public static void main(String[] args) {
+
+
+		String s = "s";
+		String d = "D";
+		
+		System.out.println(s.toUpperCase()); // 소문자 -> 대문자
+		System.out.println(d.toLowerCase()); // 대문자 -> 소문자
+		
+	}
+}
+
+```
+소문자 대문자 변환방법
+
+toUpperCase 소 -> 대
+toLowerCase 대 -> 소</p>
+</nav>
+</a>
+<div class="detail_into">
+IT LIST , 2021-01-06 20:42:57</div></div><div class="list_content">
 <a href="article-detail-9.html" class="link_post">
 <nav>
 <strong class="tit_post">[Java]BufferedReader, BufferedWriter 빠른 입출력 클래스</strong>
@@ -214,41 +248,7 @@ String title = scan.nextLine().trim();
 </nav>
 </a>
 <div class="detail_into">
-IT LIST , 2020-12-18 11:13:05</div></div><div class="list_content">
-<a href="article-detail-5.html" class="link_post">
-<nav>
-<strong class="tit_post">[Java] 진수 변환😀</strong>
-<p class="txt_post"># 2진수, 8진수, 16진수,10진수 변환 😀
-```java
-import java.util.Scanner;
-
-public class Main {
-
-	public static void main(String[] args) {
-		
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
-		
-		String n2 = Integer.toBinaryString(num); // 2진수
-		String n8 = Integer.toOctalString(num); // 8진수
-		String n16 = Integer.toHexString(num); // 16진수
-		
-		
-		System.out.println("2진수: " + n2);
-		System.out.println("8진수: " + n8);
-		System.out.println("16진수: " + n16);
-		
-        
-        String num8 = scan.nextLine(); // 8진수 입력받기
-     	int n10 = Integer.parseInt(num, 8);   //8진수 10진수로 변환, 입력에 따라 2,8,16
-        System.out.println(n10);
-	}
-}}
-```</p>
-</nav>
-</a>
-<div class="detail_into">
-IT LIST , 2020-12-18 11:10:40</div></div>
+IT LIST , 2020-12-18 11:13:05</div></div>
       </div>
     </section>
   </main>

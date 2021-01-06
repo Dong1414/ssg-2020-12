@@ -24,7 +24,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.homar.co.kr" />
-<meta name="subject" content="개발자의 기술/일상 블로그"/>
+<meta name="subject" content="[Java] 소문자, 대문자 변환하기"/>
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
@@ -32,22 +32,82 @@
 <meta name="lastmod" content="2021-01-06T20:47:30" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="개발자의 기술/일상 블로그" />
+<meta name="twitter:title" content="[Java] 소문자, 대문자 변환하기" />
 <meta name="twitter:site" content="@DongLog" />
 <meta name="twitter:creator" content="@DongLog" />
 <meta name="twitter:image" content="/img/logo/logo_opengraph.png">
-<meta name="twitter:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta name="twitter:description" content=" 소문자 대문자 변환하기
+java 
+public class Main 
+
+	public static void mainString args 
+
+
+		String s  s
+		String d  D
+		
+		SystemoutprintlnstoUpperCase  소문자  대문자
+		SystemoutprintlndtoLowerCase  대문자  소문자
+		
+	
+
+
+
+소문자 대문자 변환방법
+
+toUpperCase 소  대
+toLowerCase 대  소" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="DongLog" />
 <meta itemprop="name" content="DongLog" />
-<meta itemprop="description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta itemprop="description" content=" 소문자 대문자 변환하기
+java 
+public class Main 
+
+	public static void mainString args 
+
+
+		String s  s
+		String d  D
+		
+		SystemoutprintlnstoUpperCase  소문자  대문자
+		SystemoutprintlndtoLowerCase  대문자  소문자
+		
+	
+
+
+
+소문자 대문자 변환방법
+
+toUpperCase 소  대
+toLowerCase 대  소" />
 <meta itemprop="image" content="https://i.esdrop.com/d/TpK9N9qGZZ.png" >
 
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="DongLog" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="개발자의 기술/일상 블로그" />
-<meta property="og:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta property="og:title" content="[Java] 소문자, 대문자 변환하기" />
+<meta property="og:description" content=" 소문자 대문자 변환하기
+java 
+public class Main 
+
+	public static void mainString args 
+
+
+		String s  s
+		String d  D
+		
+		SystemoutprintlnstoUpperCase  소문자  대문자
+		SystemoutprintlndtoLowerCase  대문자  소문자
+		
+	
+
+
+
+소문자 대문자 변환방법
+
+toUpperCase 소  대
+toLowerCase 대  소" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="https://i.esdrop.com/d/TpK9N9qGZZ.png" >
 <meta property="og:image:alt" content="blog.homar.co.kr" />
@@ -62,7 +122,7 @@
 
 
 
-<title>DongLog | ARTICLE_LIST_FREE</title>
+<title>[Java] 소문자, 대문자 변환하기 | DongLog | ARTICLE_DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -119,39 +179,90 @@
 		<main class="flex-grow-1">
 			<section class="title-bar con-min-width">
 				<h1 class="con">
-					<i class="fab fa-freebsd"></i> <span>FREE</span>
+					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
 				</h1>
 			</section>
 			
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
 
-    <section class="section-1 con-min-width">
-      <div class="con">
-        <div class="article-list">
-          <header>
-            <div class ="flex flex-jc-c">            
-              <div class="article-list__cell-id">번호</div>
-              <div class="article-list__cell-reg-date">날짜</div>
-              <div class="article-list__cell-writer">작성자</div>
-              <div class="article-list__cell-title">제목</div>
-            </div>
-          </header>
-           <main class=list-main>           
-            <div><div class="article-list__cell-id">7</div><div class="article-list__cell-reg-date">2020-12-29 09:19:19</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-title"><a href="article-detail-7.html" class="hover-underline">요즘 날씨 너무 춥다..😭</a></div></div>                           
-                   
-           </main>
-        </div>
-        
-        <div class="article-page-menu">
-          <ul class="flex flex-jc-r">
-           <li><a href="article-list-free-1.html" class="flex flex-ai-c article-page-menu__link--selected">1</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
 
-  
-  
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+
+
+
+<section class="section-1 con-min-width">
+	<div class="con">
+		<div class="detail-list">
+			<header class="detail-title">
+				<div class="flex flex-jc-c"><div class="article-list__cell-id">10</div><div class="article-list__cell-title">[Java] 소문자, 대문자 변환하기</div><div class="article-list__cell-writer">호말</div><div class="article-list__cell-reg-date">2021-01-06 20:42:57</div><div class="article-list__likes-count">추천 : 0</div><div class="article-list__comments-count">댓글 : 0</div></div>
+			</header>
+			<main class="detail-main main-font">
+				<div class="main-body "># .소문자, 대문자 변환하기
+```java 
+public class Main {
+
+	public static void main(String[] args) {
+
+
+		String s = "s";
+		String d = "D";
+		
+		System.out.println(s.toUpperCase()); // 소문자 -> 대문자
+		System.out.println(d.toLowerCase()); // 대문자 -> 소문자
+		
+	}
+}
+
+```
+소문자 대문자 변환방법
+
+toUpperCase 소 -> 대
+toLowerCase 대 -> 소</div>
+			</main>
+
+			<div class="article-detail__reply-box">
+				<div id="disqus_thread"></div>
+				<script>
+					var disqus_config = function() {
+						this.page.url = 'https://blog.homar.co.kr/article-detail-10.html';
+						this.page.identifier = 'article-detail-10.html';
+					};
+					(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://homar-ssg.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<noscript>
+					Please enable JavaScript to view the <a
+						href="https://disqus.com/?ref_noscript">comments powered by
+						Disqus.</a>
+				</noscript>
+			</div>
+
+			<div class="article-detail__menu flex"><a href="#" class="hover-underline">&lt; 다음글 </a><a href="article-list-1.html" class="hover-underline">목록</a><a href="article-detail-9.html" class="hover-underline"> 이전글 &gt;</a> </div>
+		</div>
+	</div>
+</section>
+</main>
+
 <footer class="bottom-bar con-min-width">
 	<div class="con flex flex-ai-c">
 		<a href="index.html" class="logo logo--mini flex flex-ai-c">			
