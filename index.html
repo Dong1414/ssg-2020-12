@@ -28,8 +28,8 @@
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
-<meta name="pubdate" content="2021-01-14T20:45:12" />
-<meta name="lastmod" content="2021-01-14T20:45:12" />
+<meta name="pubdate" content="2021-01-17T16:05:12" />
+<meta name="lastmod" content="2021-01-17T16:05:12" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="개발자의 기술/일상 블로그" />
@@ -53,8 +53,8 @@
 <meta property="og:image:alt" content="blog.homar.co.kr" />
 
 
-<meta property="og:updated_time" content="2021-01-14T20:45:12"/>
-<meta property="og:pubdate" content="2021-01-14T20:45:12" />
+<meta property="og:updated_time" content="2021-01-17T16:05:12"/>
+<meta property="og:pubdate" content="2021-01-17T16:05:12" />
 <meta property="og:url" content="https://blog.homar.co.kr" />
 
 
@@ -143,9 +143,127 @@
  <section class="section-1 index-list-min-width ">
       <div class="index-list">
        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="list_content">
+<a href="article-detail-12.html" class="link_post">
+<nav>
+<strong class="tit_post">[java][programmers] 두 개 뽑아서 더하기</strong>
+<p class="txt_post"># 두 개 뽑아서 더하기
+문제 
+
+정수 배열 numbers가 주어집니다. numbers에서 서로 다른 인덱스에 있는 두 개의 수를 뽑아 더해서 만들 수 있는 모든 수를 배열에 오름차순으로 담아 return 하도록 solution 함수를 완성해주세요.
+
+제한사항
+numbers의 길이는 2 이상 100 이하입니다.
+numbers의 모든 수는 0 이상 100 이하입니다.
+입출력 예
+numbers	result
+[2,1,3,4,1]	[2,3,4,5,6,7]
+[5,0,2,7]	[2,5,7,9,12]
+입출력 예 설명
+입출력 예 #1
+
+2 = 1 + 1 입니다. (1이 numbers에 두 개 있습니다.)
+3 = 2 + 1 입니다.
+4 = 1 + 3 입니다.
+5 = 1 + 4 = 2 + 3 입니다.
+6 = 2 + 4 입니다.
+7 = 3 + 4 입니다.
+따라서 [2,3,4,5,6,7] 을 return 해야 합니다.
+입출력 예 #2
+
+2 = 0 + 2 입니다.
+5 = 5 + 0 입니다.
+7 = 0 + 7 = 5 + 2 입니다.
+9 = 2 + 7 입니다.
+12 = 5 + 7 입니다.
+따라서 [2,5,7,9,12] 를 return 해야 합니다.
+
+
+# .정답
+```java 
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
+class Solution {
+    public int[] solution(int[] numbers) {
+        List<Integer> array = new ArrayList<>();
+        
+        int n = numbers.length;
+        
+        for(int i = 0; i < n; i++){
+            for(int j = i+1 ; j<n ; j++){
+                int sum = numbers[i]+numbers[j];
+                if(!array.contains(sum)){
+                    array.add(sum);
+                }
+            }
+        }
+        
+        int[] answer = new int[array.size()];
+        for(int i = 0; i < array.size(); i++){
+            answer[i] = array.get(i);
+        }
+        
+        Arrays.sort(answer);
+        
+        
+        return answer;
+    }
+}
+
+```
+
+# .설명
+```java
+         List<Integer> array = new ArrayList<>();
+        
+        int n = numbers.length;
+```
+
+정답을 저장할 array를 ArrayList로 선언하고
+
+매개변수 numbers의 길이만큼 변수 n에 저장합니다.
+
+```java
+   for(int i = 0; i < n; i++){
+            for(int j = i+1 ; j<n ; j++){
+                int sum = numbers[i]+numbers[j];
+                if(!array.contains(sum)){
+                    array.add(sum);
+                }
+            }
+        }
+```
+
+이중포문으로 numbers의 값을 돌려가며 sum을 구하는데
+
+contains를 사용해 현재의 sum값이 이미 들어가있는지 검사하고 array에 넣어줍니다.
+
+```java
+ int[] answer = new int[array.size()];
+        for(int i = 0; i < array.size(); i++){
+            answer[i] = array.get(i);
+        }
+        
+        Arrays.sort(answer);
+        
+        
+        return answer;
+    }
+```
+
+함수 return 값이 int[]형으로 되어있기 때문에 정답을 옮겨담기 위해 만들어주고 옮겨줍니다.
+
+그리고 sort(정렬함수) 함수를 사용해 정렬해주고 리턴합니다. 
+</p>
+</nav>
+</a>
+<div class="detail_into">
+IT LIST , 2021-01-17 15:16:56</div></div><div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="list_content">
 <a href="article-detail-11.html" class="link_post">
 <nav>
-<strong class="tit_post">[java}[programmers] 모의고사</strong>
+<strong class="tit_post">[java][programmers] 모의고사</strong>
 <p class="txt_post"># .완전탐색
 
 문제 
@@ -180,7 +298,7 @@ answers	return
 
 
 # .정답
-```java 
+```java
 class Solution {
     public int[] solution(int[] answers) {
         int[] answer = {};
@@ -188,10 +306,10 @@ class Solution {
         int[] two = {2,1,2,3,2,4,2,5};
         int[] three = {3,3,1,1,2,2,4,4,5,5};
         int[] sum = {0, 0, 0};
-        
+        '<'
         int max = 0;
         
-        for(int i = 0; i < answers.length ; i++){
+        for(int i = 0; i \< answers.length ; i++){
             
             if(one[i%5] == answers[i]){
                 sum[0] += 1;
@@ -437,15 +555,7 @@ ex) 2016년 5월 24일
 </nav>
 </a>
 <div class="detail_into">
-IT LIST , 2020-12-29 09:34:50</div></div><div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="list_content">
-<a href="article-detail-7.html" class="link_post">
-<nav>
-<strong class="tit_post">요즘 날씨 너무 춥다..😭</strong>
-<p class="txt_post">코로나 다 물러가라 제발..😭</p>
-</nav>
-</a>
-<div class="detail_into">
-FREE LIST , 2020-12-29 09:19:19</div></div>
+IT LIST , 2020-12-29 09:34:50</div></div>
       </div>
     </section>
   </main>
