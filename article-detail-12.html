@@ -28,8 +28,8 @@
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
-<meta name="pubdate" content="2021-01-17T16:05:12" />
-<meta name="lastmod" content="2021-01-17T16:05:12" />
+<meta name="pubdate" content="2021-01-19T17:12:34" />
+<meta name="lastmod" content="2021-01-19T17:12:34" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="[java][programmers] 두 개 뽑아서 더하기" />
@@ -82,7 +82,7 @@ class Solution
         int n  numberslength
         
         forint i  0 i  n i
-            forint j  i1  jn  j
+            forint j  i1  j  n  j
                 int sum  numbersinumbersj
                 ifarraycontainssum
                     arrayaddsum
@@ -117,7 +117,7 @@ java
 
 java
    forint i  0 i  n i
-            forint j  i1  jn  j
+            forint j  i1  j  n  j
                 int sum  numbersinumbersj
                 ifarraycontainssum
                     arrayaddsum
@@ -196,7 +196,7 @@ class Solution
         int n  numberslength
         
         forint i  0 i  n i
-            forint j  i1  jn  j
+            forint j  i1  j  n  j
                 int sum  numbersinumbersj
                 ifarraycontainssum
                     arrayaddsum
@@ -231,7 +231,7 @@ java
 
 java
    forint i  0 i  n i
-            forint j  i1  jn  j
+            forint j  i1  j  n  j
                 int sum  numbersinumbersj
                 ifarraycontainssum
                     arrayaddsum
@@ -313,7 +313,7 @@ class Solution
         int n  numberslength
         
         forint i  0 i  n i
-            forint j  i1  jn  j
+            forint j  i1  j  n  j
                 int sum  numbersinumbersj
                 ifarraycontainssum
                     arrayaddsum
@@ -348,7 +348,7 @@ java
 
 java
    forint i  0 i  n i
-            forint j  i1  jn  j
+            forint j  i1  j  n  j
                 int sum  numbersinumbersj
                 ifarraycontainssum
                     arrayaddsum
@@ -383,8 +383,8 @@ java
 <meta property="og:image:alt" content="blog.homar.co.kr" />
 
 
-<meta property="og:updated_time" content="2021-01-17T16:05:12"/>
-<meta property="og:pubdate" content="2021-01-17T16:05:12" />
+<meta property="og:updated_time" content="2021-01-19T17:12:34"/>
+<meta property="og:pubdate" content="2021-01-19T17:12:34" />
 <meta property="og:url" content="https://blog.homar.co.kr" />
 
 
@@ -534,12 +534,12 @@ import java.util.Arrays;
 
 class Solution {
     public int[] solution(int[] numbers) {
-        List<Integer> array = new ArrayList<>();
+        List＜Integer＞ array = new ArrayList＜＞();
         
         int n = numbers.length;
         
-        for(int i = 0; i < n; i++){
-            for(int j = i+1 ; j<n ; j++){
+        for(int i = 0; i ＜ n; i++){
+            for(int j = i+1 ; j ＜ n ; j++){
                 int sum = numbers[i]+numbers[j];
                 if(!array.contains(sum)){
                     array.add(sum);
@@ -548,7 +548,7 @@ class Solution {
         }
         
         int[] answer = new int[array.size()];
-        for(int i = 0; i < array.size(); i++){
+        for(int i = 0; i ＜ array.size(); i++){
             answer[i] = array.get(i);
         }
         
@@ -563,7 +563,7 @@ class Solution {
 
 # .설명
 ```java
-         List<Integer> array = new ArrayList<>();
+         List＜Integer＞ array = new ArrayList＜＞();
         
         int n = numbers.length;
 ```
@@ -573,8 +573,8 @@ class Solution {
 매개변수 numbers의 길이만큼 변수 n에 저장합니다.
 
 ```java
-   for(int i = 0; i < n; i++){
-            for(int j = i+1 ; j<n ; j++){
+   for(int i = 0; i ＜ n; i++){
+            for(int j = i+1 ; j ＜ n ; j++){
                 int sum = numbers[i]+numbers[j];
                 if(!array.contains(sum)){
                     array.add(sum);
@@ -589,7 +589,7 @@ contains를 사용해 현재의 sum값이 이미 들어가있는지 검사하고
 
 ```java
  int[] answer = new int[array.size()];
-        for(int i = 0; i < array.size(); i++){
+        for(int i = 0; i ＜ array.size(); i++){
             answer[i] = array.get(i);
         }
         
