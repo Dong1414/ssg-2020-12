@@ -28,8 +28,8 @@
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
-<meta name="pubdate" content="2021-01-19T17:12:34" />
-<meta name="lastmod" content="2021-01-19T17:12:34" />
+<meta name="pubdate" content="2021-01-20T18:11:58" />
+<meta name="lastmod" content="2021-01-20T18:11:58" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="개발자의 기술/일상 블로그" />
@@ -53,8 +53,8 @@
 <meta property="og:image:alt" content="blog.homar.co.kr" />
 
 
-<meta property="og:updated_time" content="2021-01-19T17:12:34"/>
-<meta property="og:pubdate" content="2021-01-19T17:12:34" />
+<meta property="og:updated_time" content="2021-01-20T18:11:58"/>
+<meta property="og:pubdate" content="2021-01-20T18:11:58" />
 <meta property="og:url" content="https://blog.homar.co.kr" />
 
 
@@ -143,11 +143,26 @@
  <section class="section-1 index-list-min-width ">
       <div class="index-list">
        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="list_content">
+<a href="article-detail-13.html" class="link_post">
+<nav>
+<strong class="tit_post">[JSP]JSP커뮤니티 개발일지 #1</strong>
+<p class="txt_post"># 구현목록
+- CRUD 완
+- 회원가입 , 로그인, 로그아웃, 로그인 권한 체크 완 
+- CSS적용 완 ( 계속 수정 )
+
+```youtube
+gRinHnGdgM8
+```</p>
+</nav>
+</a>
+<div class="detail_into">
+IT LIST , 2021-01-20 16:46:06</div></div><div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="list_content">
 <a href="article-detail-12.html" class="link_post">
 <nav>
 <strong class="tit_post">[java][programmers] 두 개 뽑아서 더하기</strong>
 <p class="txt_post"># 두 개 뽑아서 더하기
-문제 
+문제
 
 정수 배열 numbers가 주어집니다. numbers에서 서로 다른 인덱스에 있는 두 개의 수를 뽑아 더해서 만들 수 있는 모든 수를 배열에 오름차순으로 담아 return 하도록 solution 함수를 완성해주세요.
 
@@ -155,9 +170,9 @@
 numbers의 길이는 2 이상 100 이하입니다.
 numbers의 모든 수는 0 이상 100 이하입니다.
 입출력 예
-numbers	result
-[2,1,3,4,1]	[2,3,4,5,6,7]
-[5,0,2,7]	[2,5,7,9,12]
+numbers result
+[2,1,3,4,1] [2,3,4,5,6,7]
+[5,0,2,7] [2,5,7,9,12]
 입출력 예 설명
 입출력 예 #1
 
@@ -215,18 +230,18 @@ class Solution {
 ```
 
 # .설명
-```java
-         List＜Integer＞ array = new ArrayList＜＞();
+```
+       List＜Integer＞ array = new ArrayList＜＞();
         
-        int n = numbers.length;
+       int n = numbers.length;
 ```
 
 정답을 저장할 array를 ArrayList로 선언하고
 
-매개변수 numbers의 길이만큼 변수 n에 저장합니다.
+매개변수 numbers의 길이만큼 변수 n에 저장합니다..
 
-```java
-   for(int i = 0; i ＜ n; i++){
+```
+ for(int i = 0; i ＜ n; i++){
             for(int j = i+1 ; j ＜ n ; j++){
                 int sum = numbers[i]+numbers[j];
                 if(!array.contains(sum)){
@@ -240,8 +255,8 @@ class Solution {
 
 contains를 사용해 현재의 sum값이 이미 들어가있는지 검사하고 array에 넣어줍니다.
 
-```java
- int[] answer = new int[array.size()];
+```
+int[] answer = new int[array.size()];
         for(int i = 0; i ＜ array.size(); i++){
             answer[i] = array.get(i);
         }
@@ -255,15 +270,16 @@ contains를 사용해 현재의 sum값이 이미 들어가있는지 검사하고
 
 함수 return 값이 int[]형으로 되어있기 때문에 정답을 옮겨담기 위해 만들어주고 옮겨줍니다.
 
-그리고 sort(정렬함수) 함수를 사용해 정렬해주고 리턴합니다. 
+그리고 sort(정렬함수) 함수를 사용해 정렬해주고 리턴합니다.
+
 </p>
 </nav>
 </a>
 <div class="detail_into">
-IT LIST , 2021-01-17 15:16:56</div></div><div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="list_content">
+IT LIST , 2021-01-19 17:29:43</div></div><div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="list_content">
 <a href="article-detail-11.html" class="link_post">
 <nav>
-<strong class="tit_post">[java][programmers] 모의고사</strong>
+<strong class="tit_post">[java}[programmers] 모의고사</strong>
 <p class="txt_post"># .완전탐색
 
 문제 
@@ -298,7 +314,7 @@ answers	return
 
 
 # .정답
-```java
+```java 
 class Solution {
     public int[] solution(int[] answers) {
         int[] answer = {};
@@ -306,10 +322,10 @@ class Solution {
         int[] two = {2,1,2,3,2,4,2,5};
         int[] three = {3,3,1,1,2,2,4,4,5,5};
         int[] sum = {0, 0, 0};
-        '<'
+        
         int max = 0;
         
-        for(int i = 0; i \< answers.length ; i++){
+        for(int i = 0; i < answers.length ; i++){
             
             if(one[i%5] == answers[i]){
                 sum[0] += 1;
@@ -514,48 +530,7 @@ System.out.println()보다 더 빠르다.</p>
 </nav>
 </a>
 <div class="detail_into">
-IT LIST , 2020-12-29 09:36:57</div></div><div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="list_content">
-<a href="article-detail-8.html" class="link_post">
-<nav>
-<strong class="tit_post">[Java] 일, 월 입력받아 요일 구하기</strong>
-<p class="txt_post"># .요일 구하기 😀
-```java 
-class Solution {
-    public String solution(int a, int b) {
-        int [] day = {31,29,31,30,31,30,31,31,30,31,30,31};
-        String [] month = {"THU","FRI", "SAT","SUN", "MON", "TUE", "WED"};
-        
-        int total = 0;
-        
-        for(int i = 0; i < a-1; i++){
-            total += day[i];
-        }
-        
-        total += b;
-        System.out.println(total);
-        int week = total % 7;
-        return month[week];
-    }
-}
-
-```
-2016년 기준이고, 해당 년도의 월마다 일수를 배열에 저장.
-
- 
-
-요일은 2016.01.01의 요일 금요일에서 하루 뺀 값으로 배열에 저장. ( 나중에 % 7 했을때 1이 나오면 금요일부터 출력 )
-
- 
-
-요일을 구하는 공식은 
-
-ex) 2016년 5월 24일
-
-   - (1~4월 까지의 일 수 + 현재 달의 일 수) % 7 </p>
-</nav>
-</a>
-<div class="detail_into">
-IT LIST , 2020-12-29 09:34:50</div></div>
+IT LIST , 2020-12-29 09:36:57</div></div>
       </div>
     </section>
   </main>

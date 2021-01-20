@@ -24,7 +24,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.homar.co.kr" />
-<meta name="subject" content="개발자의 기술/일상 블로그"/>
+<meta name="subject" content="[JSP]JSP커뮤니티 개발일지 #1"/>
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
@@ -32,22 +32,43 @@
 <meta name="lastmod" content="2021-01-20T18:11:59" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="개발자의 기술/일상 블로그" />
+<meta name="twitter:title" content="[JSP]JSP커뮤니티 개발일지 #1" />
 <meta name="twitter:site" content="@DongLog" />
 <meta name="twitter:creator" content="@DongLog" />
 <meta name="twitter:image" content="/img/logo/logo_opengraph.png">
-<meta name="twitter:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta name="twitter:description" content=" 구현목록
+ CRUD 완
+ 회원가입  로그인 로그아웃 로그인 권한 체크 완 
+ CSS적용 완  계속 수정 
+
+youtube
+gRinHnGdgM8
+" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="DongLog" />
 <meta itemprop="name" content="DongLog" />
-<meta itemprop="description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta itemprop="description" content=" 구현목록
+ CRUD 완
+ 회원가입  로그인 로그아웃 로그인 권한 체크 완 
+ CSS적용 완  계속 수정 
+
+youtube
+gRinHnGdgM8
+" />
 <meta itemprop="image" content="https://i.esdrop.com/d/TpK9N9qGZZ.png" >
 
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="DongLog" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="개발자의 기술/일상 블로그" />
-<meta property="og:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
+<meta property="og:title" content="[JSP]JSP커뮤니티 개발일지 #1" />
+<meta property="og:description" content=" 구현목록
+ CRUD 완
+ 회원가입  로그인 로그아웃 로그인 권한 체크 완 
+ CSS적용 완  계속 수정 
+
+youtube
+gRinHnGdgM8
+" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="https://i.esdrop.com/d/TpK9N9qGZZ.png" >
 <meta property="og:image:alt" content="blog.homar.co.kr" />
@@ -62,7 +83,7 @@
 
 
 
-<title>DongLog | STAT</title>
+<title>[JSP]JSP커뮤니티 개발일지 #1 | DongLog | ARTICLE_DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -127,14 +148,16 @@
 			</div>
 			<section class="title-bar con-min-width">		
 				<h1 class="con">
-					
+					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
 				</h1>
 				
 			</section>
 			
 <!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
 
 <!-- 토스트 UI 에디터, 자바스크립트 코어 -->
 <script
@@ -148,36 +171,58 @@
 	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
 
 <!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
-<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 
 
 
 <section class="section-1 con-min-width">
-    <div class="con">
-      <div class="stat-list">
-        <header class="detail-title">
-          <div class ="flex flex-jc-c">
-            <div>STATUS</div>
-          </div>
-        </header>
-        <main class="detail-main main-font">
-          <div class = "main-body ">       
-            <meta charset="UTF-8"><div>회원 수 : 2</div><div>전체 게시물 수 : 13</div><div>공지사항 게시판 게시물 수 : 1</div><div>IT 게시판 게시물 수 : 11</div><div>전체 게시물 조회 수 : 12</div><div>공지사항 게시판 조회 수 : 3</div><div>IT 게시판 조회 수 : 9</div>
-          </div>          
-        </main>
-        
-       <div class="article-detail__reply-box">
-       <div id="disqus_thread"></div>
+	<div class="con">
+		<div class="detail-list">
+			<header class="detail-title">
+				<div class="flex flex-jc-c detail-div"><div class="article-detail__cell-id">13</div><div class="article-detail__cell-title">[JSP]JSP커뮤니티 개발일지 #1</div><div class="article-detail__cell-writer">호말</div><div class="article-detail__cell-reg-date">2021-01-20 16:46:06</div><div class="article-detail__likes-count">추천 : 0</div><div class="article-detail__comments-count">댓글 : 0</div></div>
+			</header>
+			<main class="detail-main main-font">
+				<div class="main-body ">
+				# 구현목록
+- CRUD 완
+- 회원가입 , 로그인, 로그아웃, 로그인 권한 체크 완 
+- CSS적용 완 ( 계속 수정 )
 
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-       </div>	
-        
-        <div class="article-detail__menu flex">       
-            
-          </div>
-      </div>
-    </div>
-  </section>
+```youtube
+gRinHnGdgM8
+```				
+				</div>
+				<div class = "tag">
+				
+				</div>			
+			</main>
+
+			<div class="article-detail__reply-box">
+				<div id="disqus_thread"></div>
+				<script>
+					var disqus_config = function() {
+						this.page.url = 'https://blog.homar.co.kr/article-detail-13.html';
+						this.page.identifier = 'article-detail-13.html';
+					};
+					(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://homar-ssg.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<noscript>
+					Please enable JavaScript to view the <a
+						href="https://disqus.com/?ref_noscript">comments powered by
+						Disqus.</a>
+				</noscript>
+			</div>
+
+			<div class="article-detail__menu flex"><a href="#" class="hover-underline">&lt; 다음글 </a><a href="article-list-1.html" class="hover-underline">목록</a><a href="article-detail-12.html" class="hover-underline"> 이전글 &gt;</a> </div>
+		</div>
+	</div>
+</section>
 </main>
 
 <footer class="bottom-bar con-min-width">
