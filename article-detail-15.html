@@ -28,8 +28,8 @@
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
-<meta name="pubdate" content="2021-01-27T21:05:07" />
-<meta name="lastmod" content="2021-01-27T21:05:07" />
+<meta name="pubdate" content="2021-01-27T21:21:11" />
+<meta name="lastmod" content="2021-01-27T21:21:11" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="[java][programmers] 나누어 떨어지는 숫자 배열" />
@@ -356,8 +356,8 @@ j  0 이 아닐 경우는 나누어 떨어지는 숫자가 하나도 없다는 �
 <meta property="og:image:alt" content="blog.homar.co.kr" />
 
 
-<meta property="og:updated_time" content="2021-01-27T21:05:07"/>
-<meta property="og:pubdate" content="2021-01-27T21:05:07" />
+<meta property="og:updated_time" content="2021-01-27T21:21:11"/>
+<meta property="og:pubdate" content="2021-01-27T21:21:11" />
 <meta property="og:url" content="https://blog.homar.co.kr" />
 
 
@@ -541,7 +541,7 @@ class Solution {
 나누어 떨어질 때 마다 1씩 증가시킵니다.
 
 ```
- if(j > 0){
+ if(j ＞ 0){
             int[] answer = new int[j];    
             j =0;
             for(int i = 0; i ＜ arr.length ; i++){
@@ -559,11 +559,11 @@ class Solution {
     }
 }
 ```
-j ＜ 0 이라면 나누어 떨어진 숫자가 있다는 뜻이니 j크기의 answer을 선언하고
+j ＞ 0 이라면 나누어 떨어진 숫자가 있다는 뜻이니 j크기의 answer을 선언하고
 
 다시 나누어 값을 하나씩 넣고 정렬하여 리턴합니다.
 
-j ＞ 0 이 아닐 경우는 나누어 떨어지는 숫자가 하나도 없다는 뜻이니 -1을 리턴합니다.
+j ＜ 0 이 아닐 경우는 나누어 떨어지는 숫자가 하나도 없다는 뜻이니 -1을 리턴합니다.
 
 생각나는대로 적어서 두 번 나누었는데 한번에 나눠도 될 것 같습니다.
 
