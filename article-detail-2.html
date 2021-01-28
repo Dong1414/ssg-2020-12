@@ -28,8 +28,8 @@
 <meta name="title" content="DongLog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="DongLog" />
-<meta name="pubdate" content="2021-01-27T21:21:12" />
-<meta name="lastmod" content="2021-01-27T21:21:12" />
+<meta name="pubdate" content="2021-01-28T21:07:19" />
+<meta name="lastmod" content="2021-01-28T21:07:19" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="[Java] 기본 문법😀" />
@@ -68,10 +68,10 @@ int c  a  b
 <meta property="og:image:alt" content="blog.homar.co.kr" />
 
 
-<meta property="og:updated_time" content="2021-01-27T21:21:12"/>
-<meta property="og:pubdate" content="2021-01-27T21:21:12" />
+<meta property="og:updated_time" content="2021-01-28T21:07:19"/>
+<meta property="og:pubdate" content="2021-01-28T21:07:19" />
 <meta property="og:url" content="https://blog.homar.co.kr" />
-
+<meta name="viewport" content="width=device-width,initial-scale=0.7,minimum-scale=1,maximum-scale=1,user-scalable=no">
 
 
 
@@ -91,6 +91,7 @@ int c  a  b
 		<!-- 로고바 시작 -->
 		<header id = "logo-bar" class="logo-bar con-min-width">
 			<div class="con height-100p flex flex-jc-c">
+				<a href="#menu-box-1" class="m-menu" onclick="menuBtn()"><span><i class="fas fa-bars"></i></span></a>
 				<a href="index.html" class="logo flex flex-ai-c">         
 					<span>
 						
@@ -99,12 +100,12 @@ int c  a  b
          <div class="flex-grow-1"></div>
     <nav class="menu-box-1">
       <ul class="flex height-100p">
-        <li><a class="height-100p flex flex-ai-c" href="https://github.com/Dong1414/" target="_blank">GITHUB</a></li>
-        <li><a class="height-100p flex flex-ai-c" href="https://dlaehdrktm.tistory.com/" target="_blank">TSTORY</a></li>
-        <li><a class="height-100p flex flex-ai-c" href="stat.html">STATISTICS</a></li> 
+        <li><a class="height-100p m_delete flex flex-ai-c" href="https://github.com/Dong1414/" target="_blank">GITHUB</a></li>
+        <li><a class="height-100p m_delete flex flex-ai-c" href="https://dlaehdrktm.tistory.com/" target="_blank">TSTORY</a></li>
+        <li><a class="height-100p m_delete flex flex-ai-c" href="stat.html">STATISTICS</a></li> 
         <li><a class="height-100p flex flex-ai-c" href="./article-search.html" class="block">
 								<i class="fas fa-search"></i>
-								<span>검색</span>
+								<span></span>
 							</a>
 						</li>       
       </ul>
@@ -117,6 +118,7 @@ int c  a  b
 			<header class="menu-bar">
 			<div class="height-100p">
 				<nav class="menu-bar__menu-1">
+				<div class="m-menubar-close"><a href="#" onclick="menuClose()"><i class="fas fa-times"></i></a></div>
 				<ul>					
 						<li><a href="article-list-free-1.html" class="block"><i class="fab fa-freebsd"></i> <span>FREE</span></a></li><li><a href="article-list-it-1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>IT LIST</span></a></li><li><a href="article-list-notice-1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
 					
